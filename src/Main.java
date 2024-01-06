@@ -13,10 +13,12 @@ public class Main {
                 "asd123",
                 "asd123");
 
+        try {
+            Check.checkUser(user2);
+        } catch (RuntimeException exception){
+            System.out.println("Проверка " + user2 + " завершилась ошибкой: "+ exception.getMessage());
+        }
 
-        Check.checkUser(user1);
-        Check.checkUser(user2);
-        Check.checkUser(user3);
 
     }
 
